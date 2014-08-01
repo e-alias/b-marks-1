@@ -1,0 +1,79 @@
+
+/* General styles */
+body {  }
+
+a, a:visited { color:#248; text-decoration:none; background-color:transparent; border-bottom:1px solid #369; }
+a:hover { color:#036; text-decoration:none; background-color:#eee; border-bottom:1px solid #bbb; }
+
+a.int, a.int:visited { color:#036; text-decoration:none; background-color:#eee; border-bottom:1px solid #e4e4e4; }
+a.int:hover { color:#248; text-decoration:none; background-color:transparent; border-bottom:1px solid #369; }
+
+a.sm { font-size:90%; }
+
+a img, a img:visited { text-decoration:none; background-color:transparent; border-bottom:none; border:none; }
+a img:hover { text-decoration:none; background-color:transparent; border-bottom:none; border:none; }
+
+.clear-lr { clear:both; }
+.clear-l { clear:left; }
+.clear-r { clear:right; }
+
+
+/* Header styles */
+#header { clear:both; float:left; width:100%;
+vertical-align:middle; border-bottom:2px solid #000; background-color:#f8f8f8; 
+}
+
+#header h1 { padding:1em 0 0 1em; font:bold 1em/1.25em 'trebuchet ms',arial,verdana,helvetica,sans-serif; 
+}
+
+/* Nav styles */
+.nav { 
+	float:right; margin-right:5px; text-align:center; vertical-align:middle;
+	background-color:transparent; 
+}
+.nav p { 
+	margin:4px 0; padding:2px 3px 3px 3px; text-align:center; vertical-align:middle;
+	font:10px/14px verdana,arial,helvetica,sans-serif; 
+}
+.nav a, .nav a:visited { text-decoration:none; color:#411; background-color:#f6f6f6; padding:1px 4px;  border-top:1px solid #e8e8e8; border-right:1px solid #fff; border-bottom:1px solid #fff; border-left:1px solid #e8e8e8; 
+}
+.nav a:hover {
+text-decoration:none; color:#555; background-color:#fcfcfc; padding:1px 4px; border-top:1px solid #f6f6f6; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; border-left:1px solid #f6f6f6;
+}
+.nav a:active { text-decoration:none; color:#411; background-color:#f6f6f6; padding:1px 4px;  border-top:1px solid #e8e8e8; border-right:1px solid #fff; border-bottom:1px solid #fff; border-left:1px solid #e8e8e8; 
+}
+
+/* three-col styles */
+
+.three-col, .two-col { float:left; clear:both; width:100%; background-color:transparent; }
+
+.three-col-left,
+.three-col-mid,
+.three-col-right,
+.two-col-left,
+.two-col-right { float:left; padding:5px 0; margin-left:5px; background-color:transparent; }
+
+.three-col h2, .two-col h2 { width:75%; margin-left:5px; padding-top:2px; font:bold .9em/1.1em 'trebuchet ms',arial,verdana,helvetica,sans-serif; border-top:1px solid #ddd; }
+
+.three-col h3, .two-col h3 { padding:.5em 0 .25em 1em; font:bold .75em/1em 'trebuchet ms',verdana,arial,helvetica,sans-serif; color:#555; }
+
+.three-col ul, .two-col ul { list-style:none; }
+
+.three-col ul li, .two-col ul li { margin-bottom:5px; color:#444; font:.7em/1.4em verdana,arial,helvetica,sans-serif; }
+
+.three-col ul li a, .two-col ul li a { margin-left:4px; margin-right:4px; padding:1px 0; }
+.three-col ul li a:hover, .two-col ul li a:hover { padding:1px 0 }
+
+.three-col ul li a.sm, .two-col ul li a.sm { margin-left:1px; margin-right:3px; }
+
+.three-col ul li a img, .two-col ul li a img { vertical-align:middle; padding:0; padding-right:2px; margin-left:-2px; }
+
+.three-col ul li a.int, .two-col ul li a.int { margin-left:3px; margin-right:3px; padding:1px 2px 2px 2px; }
+.three-col ul li a.int:hover, .two-col ul li a.int:hover { padding:1px 2px 2px 2px; }
+
+
+/* Footer styles */
+#footer { clear:both; float:left; width:100%; border-top:2px solid #000; }
+
+#footer p { margin:0; padding:10px; }
+
