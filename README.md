@@ -1,3 +1,3 @@
 links-1
 =========
-### an initial hub, spot, to start from
+### an initial hub for linkage <i>to</i>
