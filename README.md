@@ -1,3 +1,3 @@
-b-marks-1
+links-1
 =========
-### a page full of bookmarks
+### an initial hub, spot, to start from
