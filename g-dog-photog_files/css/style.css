@@ -1,0 +1,94 @@
+
+/* gives "border-box" to ALL elements' box-sizing property 
+see: www.paulirish.com/2012/box-sizing-border-box-ftw */
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+img { border: 0px none; }
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small, .small { font-size: 80%; }
+sub, sup { font-size: 80%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+abbr, acronym { border-bottom: 1px dotted #707070; cursor: default; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/* adds text- [pdf] -after .pdf links */
+a[href$=".pdf"]:after { content: " [pdf]"; }
+/* need to insert a background image here... */
+a.external, a.external[href ^="https://"], .link-https { background: transparent url('imgs/14external_link.gif') no-repeat 100% 50%; padding-right: 16px; }
+
+.fl, .fr, .fc { position: relative; }
+.fl { float: left; margin: .5em 10px .5em 0; }
+.fr { float: right; margin: .5em 0 .5em 10px; }
+.fl img, .fr img, .fc img { display: block; margin: 0 auto; }
+.fl .text, .fr .text, .fc .text { display: inline-block; padding-left: 3px; font: 11px/15px verdana,arial,helvetica; text-align: left; background-color: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+/* this centers unknown-width block elements */
+ { display: table; margin: 0 auto; } 
+
+/* 'fluid' image auto-resizing */
+img.fluid { max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; }
+
+blockquote {
+background: linear-gradient(to right, rgba(200, 200, 200, 0.1), transparent 50%) repeat scroll 0% 0% transparent;
+  border-left: 6px solid #d4d4d4;
+  margin: 1.5em 25px; padding: .25em 10px .3em; color: #444;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote.quoted:before {
+  color: #bbb; content: open-quote;
+  font-size: 5em; line-height: 0.1em; font-family: serif;
+  margin-right: .1em; vertical-align: -.35em;
+}
+blockquote.quoted p:first-of-type { display: inline; }
+
+hr { margin: 1.5em 0; padding:0;
+border-width: 1px 0px 0px 0px;
+border-style: solid none none none;
+border-color: #ddd; background-color:#f5f5f5; }
+
+hr.bold { border-top-width: 5px; border-style: dashed; }
+
+ul.unstyled { list-style-type: none; list-style-position: outside; list-style-image: none; }
+ul.unstyled li { display: inline; }
+
+ul.styled { margin: 12px 0; padding-left: 10px; list-style-type: square; list-style-position: outside; font: inherit; }
+ul.styled li { margin-left: 15px; margin-bottom: 5px; font: inherit; }
+
+pre {
+display: block; overflow: auto; /*width: _px; max-width: _px; max-height: _px;*/
+margin: 1.25em 0; padding: 5px 10px 10px 10px;
+font: 12px/18px 'courier new',courier,monospace; color:#333;
+background: #f8f8f8; border: 1px solid #ddd; border-radius: 3px;
+/* next 6 lines==> word-wrappping */
+  word-wrap: break-word; /* ie 5.5+ and safari */
+  white-space: pre; /* opera(?) */
+  white-space: -moz-pre-wrap; /* mozilla */
+  white-space: pre-wrap; /* css-3 */
+  white-space: pre\9; /* ie7+ */
+  /*word-break: break-all; /* webkit */
+  word-break: keep-all; /* prevents words from breaking on wrap */
+}
+
+code, p code {
+    padding: 0 5px 2px; vertical-align: middle;
+    display: inline-block; wordwrap: break-word;
+    background-color: #f8f8f8; border: 1px solid #ddd; border-radius: 3px;
+    font-family: 'courier new','lucida console',courier,monospace;
+    font-size: 1em; line-height: 1.5em; color: #555;
+}
+
+.s80 { font-size: 80%; font-size: .8em; }
+.s85 { font-size: 85%; font-size: .85em; }
+.s90 { font-size: 90%; font-size: .9em; }
+.s95 { font-size: 95%; font-size: .95em; }
+.s100 { font-size: 100%; font-size: 1em; }
+.s110 { font-size: 110%; font-size: 1.1em; }
+.s120 { font-size: 120%; font-size: 1.2em; }
+
+.sbg { background-color: #f2f2f2; border-radius: 3px; }
+
